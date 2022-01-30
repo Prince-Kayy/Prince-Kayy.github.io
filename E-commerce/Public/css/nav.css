@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100px; */
+    background: whitesmoke;
+    z-index: 9;
+}
+
+.nav {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    height: 60px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 500px;
+    display: flex;
+}
+
+.search-box {
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #d1d1d1;
+    background: none;
+    text-transform: capitalize;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #383838;
+    color: white;
+    text-transform: capitalize;
+    font-size: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.search-box::placeholder {
+    color: #a9a9a9;
+}
+
+.nav-items a {
+    margin-left: 20px;
+}
+
+.nav-items a img {
+    width: 30px;
+}
+
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 10vm;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 0 30px;
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:749px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .links-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .brand-logo {
+        width: 45%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        padding: 0 5px;
+    }
+    .search-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
